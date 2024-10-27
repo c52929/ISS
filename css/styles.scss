@@ -1,0 +1,94 @@
+*{
+	// margin:0;
+	// border:none;
+	// padding:0;
+	font-family: Menlo,Consolas,'Courier New',Courier,monospace, Arial,"Yu Gothic","Hiragino Kaku Gothic ProN","Yu Mincho Light","Hiragino Mincho ProN","Meiryo UI";
+}
+.inner{
+	width:100%;
+	// max-width:1366px;
+	// margin:0 auto;
+	// overflow-x:hidden;
+	sub{
+		font-size: 0.7em;
+	}
+	div.content{
+		margin-top: 28px;
+		margin-bottom: 32px;
+		.red{
+			color: #f00;
+		}
+		.blue{
+			color: #00f;
+		}
+		.gray{
+			color:#777;
+		}
+		.tac{
+			text-align: center;
+		}
+		h2{
+			margin-bottom: 12px;
+		}
+		input{
+			&[type="number"]{
+				width:4em;
+			}
+			margin-top: 0;
+			margin-bottom:12px;
+		}
+		table{
+			border:1px solid #000;
+			border-collapse: collapse;
+			margin-bottom: 12px;
+			tr:first-child{
+				td{
+					background-color:#e5e5e5;
+					font-family: Georgia,"Cambria Math",Cambria,Cochin,Times,'Times New Roman',serif, Arial,"Yu Gothic","Hiragino Kaku Gothic ProN","Yu Mincho Light","Hiragino Mincho ProN","Meiryo UI";
+					font-size: 1em;
+					font-style: italic;
+					text-align:center;
+					sub{
+						font-family: Georgia,"Cambria Math",Cambria,Cochin,Times,'Times New Roman',serif, Arial,"Yu Gothic","Hiragino Kaku Gothic ProN","Yu Mincho Light","Hiragino Mincho ProN","Meiryo UI";
+					}
+				}
+			}
+			td{
+				border:1px solid #000;
+				border-collapse: collapse;
+				font-size: 0.9em;
+				padding: 2px 8px 2px 8px;
+				text-align: right;
+				&:first-child{
+					background-color: #f5f5f5;
+				}
+				&:nth-child(6),
+				&:nth-child(7),
+				&:nth-child(8),
+				&:nth-child(9),
+				&:nth-child(10),
+				&:nth-child(11),
+				&:nth-child(12){
+					border-left:none;
+					border-right:none;
+				}
+			}
+		}
+		p{
+			margin-top:2px;
+			margin-bottom:4px;
+		}
+	}
+}
+// ul,ol{
+// 	margin: 8px 0;
+// 	padding-inline-start: 2em;
+// }
+
+
+.transparent{
+	opacity:0 !important;
+}
+.none{
+	display:none !important;
+}
