@@ -27,6 +27,10 @@
 		.tac{
 			text-align: center;
 		}
+		.ni{
+			font-family: Georgia,"Cambria Math",Cambria,Cochin,Times,'Times New Roman',serif, Arial,"Yu Gothic","Hiragino Kaku Gothic ProN","Yu Mincho Light","Hiragino Mincho ProN","Meiryo UI";
+			font-style: normal;
+		}
 		h2{
 			margin-bottom: 12px;
 		}
@@ -38,18 +42,27 @@
 			margin-bottom:12px;
 		}
 		table{
-			border:1px solid #000;
 			border-collapse: collapse;
 			margin-bottom: 12px;
 			tr:first-child{
 				td{
 					background-color:#e5e5e5;
+					border:1px solid #000;
 					font-family: Georgia,"Cambria Math",Cambria,Cochin,Times,'Times New Roman',serif, Arial,"Yu Gothic","Hiragino Kaku Gothic ProN","Yu Mincho Light","Hiragino Mincho ProN","Meiryo UI";
 					font-size: 1em;
 					font-style: italic;
 					text-align:center;
 					sub{
 						font-family: Georgia,"Cambria Math",Cambria,Cochin,Times,'Times New Roman',serif, Arial,"Yu Gothic","Hiragino Kaku Gothic ProN","Yu Mincho Light","Hiragino Mincho ProN","Meiryo UI";
+					}
+					&.empty{
+						background-color: #fff;
+						border-top:none;
+						border-bottom:none;
+						border-right:1px solid #000;
+						box-sizing: border-box;
+						width:6px;
+						padding: 0;
 					}
 				}
 			}
@@ -71,6 +84,9 @@
 				&:nth-child(12){
 					border-left:none;
 					border-right:none;
+				}
+				&:last-child{
+					border-right:1px solid #000;
 				}
 			}
 		}
